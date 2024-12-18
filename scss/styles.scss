@@ -1,0 +1,148 @@
+@use 'mixins';
+@use 'reset';
+@use 'base';
+@use 'header';
+@use 'footer';
+@use 'elementos';
+@use 'grid';
+@use 'container';
+@use 'utilidades';
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: beige;
+    @include grid(auto, 1fr);
+    height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    @include text-center;
+    color: red;
+}
+
+img {
+    height: 200px;
+    width: 200px;
+}
+
+h2 {
+    @include text-center;
+    font-size: 50px;
+}
+
+.h2-servicio {
+    @include text-center;
+    font-size: 30px;
+}
+
+li {
+    list-style: none;
+}
+
+.logo {
+    @include text-center;
+}
+
+.parrafo-index,
+p {
+    @include text-center;
+}
+
+.parrafo-index {
+    font-size: 30px;
+}
+
+p {
+    font-size: 20px;
+}
+
+.imagen1 {
+    @include text-center;
+    grid-area: imagen1;
+
+    .imagen1-1 {
+        width: 70%;
+        height: auto;
+    }
+}
+
+footer {
+    background-color: transparent;
+    color: red;
+    @include text-center;
+    margin-top: 20px;
+}
+
+.listaplagas {
+    color: black;
+    display: list-item;
+}
+
+.Imagen2,
+.imagen3,
+.mosquito,
+.ratas,
+.pulgones {
+    @include text-center;
+}
+
+.tamano {
+    width: 700px;
+    margin: 0 auto;
+    border: 3px rgba(0, 0, 0, 0.192) solid;
+    padding: 10px;
+    @include border-radius;
+}
+
+.color {
+    color: beige;
+}
+
+.contenedor {
+    @include flex-container(row, center, flex-start, wrap, 1rem);
+    margin-top: 20px;
+    width: 100%;
+}
+
+.elemento {
+    flex-basis: calc(28% - 1rem);
+    @include text-center;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-link {
+    @include transition(background-color 0.3s ease);
+
+    &:hover {
+        background-color: #e6d8b3;
+    }
+}
+
+.titulo {
+    grid-area: titulo;
+}
+
+.texto-index {
+    grid-area: parrafo;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contenedormainindex {
+    @include grid("auto auto", "1fr 1fr", "titulo titulo\nparrafo imagen1");
+    gap: 16px;
+}
+
+.caja {
+    width: 40%;
+}
+
+.contenedor-curiosidades {
+    @include flex-container(row, space-around, flex-start, wrap, 10px);
+}

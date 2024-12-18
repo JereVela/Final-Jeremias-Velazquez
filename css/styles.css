@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: beige;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 1fr;
+  height: 100vh;
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+  color: red;
+}
+
+img {
+  height: 200px;
+  width: 200px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 50px;
+}
+
+.h2-servicio {
+  text-align: center;
+  font-size: 30px;
+}
+
+li {
+  list-style: none;
+}
+
+.logo {
+  text-align: center;
+}
+
+.parrafo-index,
+p {
+  text-align: center;
+}
+
+.parrafo-index {
+  font-size: 30px;
+}
+
+p {
+  font-size: 20px;
+}
+
+.imagen1 {
+  text-align: center;
+  grid-area: imagen1;
+}
+.imagen1 .imagen1-1 {
+  width: 70%;
+  height: auto;
+}
+
+footer {
+  background-color: transparent;
+  color: red;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.listaplagas {
+  color: black;
+  display: list-item;
+}
+
+.Imagen2,
+.imagen3,
+.mosquito,
+.ratas,
+.pulgones {
+  text-align: center;
+}
+
+.tamano {
+  width: 700px;
+  margin: 0 auto;
+  border: 3px rgba(0, 0, 0, 0.192) solid;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.color {
+  color: beige;
+}
+
+.contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  width: 100%;
+  margin: 0;
+  margin-top: 20px;
+  padding: 0;
+}
+
+.elemento {
+  flex-basis: calc(28% - 1rem);
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link {
+  transition: background-color 0.3s ease;
+}
+.nav-link:hover {
+  background-color: #e6d8b3;
+}
+
+.titulo {
+  grid-area: titulo;
+}
+
+.texto-index {
+  grid-area: parrafo;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contenedormainindex {
+  display: grid;
+  grid-template-areas: "titulo titulo" "parrafo imagen1";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 3fr;
+  gap: 16px;
+}
+
+.caja {
+  width: 40%;
+}
+
+.contenedor-curiosidades {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+/*# sourceMappingURL=styles.css.map */

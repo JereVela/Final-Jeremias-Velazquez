@@ -1,0 +1,20 @@
+.contenedor {
+    @include flex-container(row, center, flex-start, wrap, 1rem);
+    margin-top: 20px;
+    width: 100%;
+}
+
+.elemento {
+    flex-basis: calc(28% - 1rem);
+    @include text-center;
+    margin: 0;
+    padding: 0;
+}
+
+.caja {
+    width: 40%;
+}
+
+.contenedor-curiosidades {
+    @include flex-container(row, space-around, flex-start, wrap, 10px);
+}

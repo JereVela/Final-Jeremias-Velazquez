@@ -1,0 +1,10 @@
+.logo {
+    @include text-center;
+}
+
+.nav-link {
+    @include transition(background-color 0.3s ease);
+    &:hover {
+        background-color: #e6d8b3;
+    }
+}

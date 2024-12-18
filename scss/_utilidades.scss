@@ -1,0 +1,11 @@
+.color {
+    color: beige;
+}
+
+.tamano {
+    width: 700px;
+    margin: 0 auto;
+    border: 3px rgba(0, 0, 0, 0.192) solid;
+    padding: 10px;
+    @include border-radius;
+}

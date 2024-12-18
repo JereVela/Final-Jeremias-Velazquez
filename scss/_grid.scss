@@ -1,0 +1,9 @@
+.imagen1 {
+    @include text-center;
+    grid-area: imagen1;
+}
+
+.contenedormainindex {
+    @include grid("auto auto", "1fr 1fr", "titulo titulo\nparrafo imagen1");
+    gap: 16px;
+}
